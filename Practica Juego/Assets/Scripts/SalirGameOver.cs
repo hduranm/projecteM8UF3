@@ -7,4 +7,9 @@ public class SalirGameOver : MonoBehaviour
     {
         SceneManager.LoadScene("Start");
     }
+
+    public void Jugar()
+    {
+        SceneManager.LoadScene("Game");
+    }
 }

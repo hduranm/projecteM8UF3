@@ -66,11 +66,17 @@ public class SpawnEnemigos : MonoBehaviour
                         float distanciaMinima = 10f;
                         float distanciaMaxima = 15f;
 
+                        // Vector2 direccionAleatoria = Random.insideUnitCircle.normalized;
+
+                        // float distanciaSpawn = Random.Range(distanciaMinima, distanciaMaxima);
+
+                        // posicionSpawn = new Vector2(jugador.position.x, jugador.position.y) + direccionAleatoria * distanciaSpawn;
+
                         Vector2 direccionAleatoria = Random.insideUnitCircle.normalized;
 
                         float distanciaSpawn = Random.Range(distanciaMinima, distanciaMaxima);
 
-                        posicionSpawn = new Vector2(jugador.position.x, jugador.position.y) + direccionAleatoria * distanciaSpawn;
+                        posicionSpawn = (Vector2)jugador.position + direccionAleatoria * Mathf.Max(distanciaSpawn, distanciaMinima);
 
 
                         GameObject enemigo = pool.GetElement();
@@ -94,7 +100,8 @@ public class SpawnEnemigos : MonoBehaviour
         }
     }
 
-    private void DevolverEnemigo(GameObject enemigo){
+    private void DevolverEnemigo(GameObject enemigo)
+    {
         enemigo.GetComponent<IPoolable>().OnReturn -= DevolverEnemigo;
         pool.ReturnElement(enemigo);
 
