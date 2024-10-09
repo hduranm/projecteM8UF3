@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da82386f31854ef44a2c57c4b667767c, type: 3}
+  m_Name: Cuchillo
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 266880467657644338, guid: cff808024ea4b3d4d9893b45fed4b75a, type: 3}
+  "da\xF1o": 5
+  velocidad: 10
+  duracionCooldown: 0.8
+  penetracion: 1

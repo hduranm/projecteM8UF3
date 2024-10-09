@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 494b5616d7a452c40a1a5f0ac8dc1d64, type: 3}
+  m_Name: Caracol Rojo
+  m_EditorClassIdentifier: 
+  velocidad: 2.4
+  vidaMaxima: 35
+  "da\xF1o": 25
+  experienciaOtorgada: 200
+  boxColliderInfo: {x: 0.6875, y: 0.71875}
+  animator: {fileID: 9100000, guid: 0e427fe6b029a7c4a8fe5c885285670c, type: 2}
